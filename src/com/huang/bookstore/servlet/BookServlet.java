@@ -13,6 +13,8 @@ import java.io.IOException;
  * @date 2021/9/25 15:39
  */
 public class BookServlet extends HttpServlet {
+    private static final long serialVersionUID = 1L;
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doGet(req, resp);
