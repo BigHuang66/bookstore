@@ -36,7 +36,7 @@ public class BookService {
         return bookDao.getBook(id);
     }
 
-    public boolean addToCart(int id, ShoppingCar sc) {
+    public boolean addToCar(int id, ShoppingCar sc) {
         Book book = bookDao.getBook(id);
         if (book != null) {
             sc.addBook(book);
@@ -58,7 +58,7 @@ public class BookService {
     }
 
     /***
-     * @description: 结账
+     * @description: 结账 数据库层面更新
      * @return:
      */
     public void cash(ShoppingCar sc, String userName, String accountId) {
